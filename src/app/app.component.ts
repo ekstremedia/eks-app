@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+// declare var TimelineMax:any;
+// import 'gsap';
+const TimelineMax = require('gsap').TimelineMax;
 
 @Component({
   selector: 'my-app',
@@ -15,5 +18,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My Ang 2 Quickstart' ;
+   title = 'My Ang 2 Quickstart' ;
+  constructor() {
+
+       console.log("home");
+    }
+  ngOnInit(){
+
+    // let tl = TimelineMax(); // this is free of errors now
+
+    // tl.play();  
+ }
 }

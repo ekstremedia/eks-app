@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 // declare var TimelineMax:any;
-// import 'gsap';
-const TimelineMax = require('gsap').TimelineMax;
+// const TimelineMax = require('gsap').TimelineMax;
 
 @Component({
   selector: 'my-app',

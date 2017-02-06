@@ -9,12 +9,9 @@ import 'jquery';
   template: `
   <nav-bar></nav-bar>
   <h1>
-  {{title}}
+  &nbsp;
   </h1>
-  <nav>
-    <a routerLink="/" routerLinkActive="active">Heim</a>
-    <a routerLink="/side2" routerLinkActive="active">side2</a>
-    </nav>
+  
  <router-outlet></router-outlet>
   `,
   // styleUrls: ['../app.component.css']

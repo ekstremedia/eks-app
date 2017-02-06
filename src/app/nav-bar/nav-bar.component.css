@@ -1,0 +1,27 @@
+a {
+	cursor: pointer;
+
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.eks-logo {
+	width: 40px;
+	height: 40px;
+	float:  left;
+	color:  white;
+	font-size: 1.8em;
+}
+.eks-logo a {
+	margin-left: 5px;
+}
+.eks-boks {
+	margin-left: 10px;
+	font-size: 1.8em;
+	width: 250px;
+	height: 40px;
+	float:  left;
+}
+

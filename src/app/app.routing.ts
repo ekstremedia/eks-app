@@ -18,7 +18,9 @@ const appRoutes: Routes = [
 	{
 		path: 'side3',
 		component: Side3Component
-	}
+	},
+	  { path: '**', component: WelcomeComponent }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

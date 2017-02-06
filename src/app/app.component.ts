@@ -12,7 +12,7 @@ import 'jquery';
   <h1>
   &nbsp;
   </h1>
-  
+  <nav-meny></nav-meny>
  <router-outlet></router-outlet>
   `,
   // styleUrls: ['../app.component.css']

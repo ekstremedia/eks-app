@@ -11,6 +11,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import 'gsap';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { Side3Component } from './sider/side3/side3.component';
 
 /** Map relative paths to URLs. */
 const map: any = {
@@ -29,7 +30,8 @@ const packages: any = {
     AppComponent,
     Side2Component,
     WelcomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    Side3Component
   ],
   imports: [
     BrowserModule,

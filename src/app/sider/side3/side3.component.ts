@@ -9,11 +9,11 @@ import "gsap";
 // import {TimelineMax} from 'gsap';
 
 @Component({
-  selector: 'app-side2',
-  templateUrl: './side2.component.html',
-  styleUrls: ['./side2.component.css']
+  selector: 'app-side3',
+  templateUrl: './side3.component.html',
+  styleUrls: ['./side3.component.css']
 })
-export class Side2Component implements OnInit {
+export class Side3Component implements OnInit {
 
   constructor() {
 // let tl = new TimelineMax;
@@ -28,8 +28,8 @@ export class Side2Component implements OnInit {
 
       tl.set('#h1', {transformOrigin:"0% 0%"}); 
       tl.from(h1, 1, { x: -2010, scale: 0.1, ease: Power4.easeInOut }, 0);
-      tl.from(h2, 2, { y: -210, opacity: 0, ease: Bounce.easeOut }, "-=0.5");
-      tl.to(h1, 0.6, {  scale: 2, ease: Power4.easeInOut }, "-=0.1");
+      tl.from(h2, 2, { y: -200, opacity:0, ease:  Power4.easeInOut  }, "-=0.5");
+      tl.to(h1, 0.4, {  scale: 2, ease: Power2.easeInOut }, "-=0.1");
 
        tl.play();
       }

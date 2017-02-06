@@ -25,9 +25,11 @@ export class Side2Component implements OnInit {
   	       let tl = new TimelineMax();
        let h1 = document.getElementById("h1");
        let h2 = document.getElementById("h2");
-      tl.from(h1, 1, { x: -2010, scale: 0.1, ease: Power4.easeInOut }, 0);
-      tl.from(h2, 2, { x: -2010, scale: 0.1, ease: Bounce.easeInOut }, "-=0.5");
-      tl.to(h1, 0.6, { x:416, scale: 2, ease: Power4.easeInOut }, "-=0.1");
+       tl.set('#h1', {transformOrigin:"0% 0%"}); 
+
+      tl.from(h1, 1, { x: -2010, scale: 0.1, ease: Power4.easeOut }, 0);
+      tl.from(h2, 2, { y: -210, ease: Bounce.easeOut }, "-=0.5");
+      tl.to(h1, 0.6, {  scale: 2, ease: Power4.easeInOut }, "-=0.1");
 
        tl.play();
       }

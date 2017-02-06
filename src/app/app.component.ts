@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import 'jquery';
 // declare var TimelineMax:any;
 // const TimelineMax = require('gsap').TimelineMax;
+// declare var $:JQueryStatic;
 
 @Component({
   selector: 'my-app',
   template: `
+  <nav-bar></nav-bar>
   <h1>
   {{title}}
   </h1>
@@ -14,10 +17,10 @@ import { Component } from '@angular/core';
     </nav>
  <router-outlet></router-outlet>
   `,
-  styleUrls: ['./app.component.css']
+  // styleUrls: ['../app.component.css']
 })
 export class AppComponent {
-   title = 'My Ang 2 Quickstart' ;
+   title = 'My Angular 2 Quickstart' ;
   constructor() {
 
        console.log("home");

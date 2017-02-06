@@ -7,7 +7,10 @@ import { routing } from './app.routing';
 import { Side2Component } from './side2/side2.component';
 import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import 'gsap';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 /** Map relative paths to URLs. */
 const map: any = {
@@ -25,13 +28,15 @@ const packages: any = {
   declarations: [
     AppComponent,
     Side2Component,
-    WelcomeComponent
+    WelcomeComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

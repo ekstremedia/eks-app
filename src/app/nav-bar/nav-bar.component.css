@@ -44,3 +44,14 @@ a {
     -khtml-border-radius: 5px;
     /* for old Konqueror browsers */
 }
+.x-btn {
+	font-size:  1.4em;
+	color: #444;
+	transition: ease-in-out .6s color;
+}
+.x-btn:hover {
+	color: maroon;
+}
+#eks-meny h2 {
+	color: white;
+}

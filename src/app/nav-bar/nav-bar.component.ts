@@ -38,10 +38,22 @@ export class NavBarComponent {
 			this.flipBtn(ball);
 			TweenMax.fromTo(eks, .2,
 			{ opacity:1, x:0 }, 
-			{ opacity:0, x:-200 });
+			{ opacity:0, x:420 });
 			this.setNeg();
 
    }
+   hideMenyIf()  {
+   	if (this.vis) {
+    	let eks = document.getElementById("eks-meny");
+		let ball = document.getElementById("ball");
+    	//this.cFlipBtn(ball);
+			this.flipBtn(ball);
+			TweenMax.fromTo(eks, .2,
+			{ opacity:1, x:0 }, 
+			{ opacity:0, x:420 });
+			this.setNeg();
+		}
+   }   
    showMeny()  {
    			// let tl = new TimelineMax();
 		    let eks = document.getElementById("eks-meny");
@@ -49,8 +61,8 @@ export class NavBarComponent {
 			this.flipBtn(ball);
 			// tl.play();
 			TweenMax.fromTo(eks, 1, 
-				{ opacity:0, x:-220, },
-				{ opacity:1, x:0, ease: Elastic.easeOut.config(1, 0.5)});
+				{ opacity:0, x:-420, ease: Power2.easeIn },
+				{ opacity:1, x:0, ease: Elastic.easeOut.config(0.6, 0.7)});
 			this.setPos();
   	
 	}

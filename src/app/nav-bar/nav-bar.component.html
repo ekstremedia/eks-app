@@ -6,17 +6,17 @@
             </div>
         </div>
         <div class="eks-boks">
-            <a routerLink="/" routerLinkActive="active">Ekstremedia Ang 2</a>
+            <a routerLink="/" routerLinkActive="active"><span (click)="hideMenyIf()">Ekstremedia Ang 2</span></a>
         </div>
     </div>
 </nav>
 
 <div id="eks-meny">
-<i style="float: right;" class="fa fa-lg fa-times text-success" (click)="hideMeny()" ></i>
-  <h1>Meny</h1>
+<i style="float: right;" class="fa fa-lg fa-times x-btn" (click)="hideMenyIf()" ></i>
+  <h2>Meny</h2>
   <hr>
-  <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-  <a class="nav-link" routerLink="/side2" routerLinkActive="active"><span (click)="hideMeny()">Page 2</span> <span class="sr-only">(current)</span></a>
-  <a class="nav-link" routerLink="/side3" routerLinkActive="active">Page 3</a>
+  <a class="nav-link" routerLink="/" routerLinkActive="active"><span (click)="hideMenyIf()">Home</span></a>
+  <a class="nav-link" routerLink="/side2" routerLinkActive="active"><span (click)="hideMenyIf()">Page 2</span> <span class="sr-only">(current)</span></a>
+  <a class="nav-link" routerLink="/side3" routerLinkActive="active"><span (click)="hideMenyIf()">Page 3</span></a>
 
 </div>

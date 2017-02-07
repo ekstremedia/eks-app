@@ -45,12 +45,14 @@ a {
     /* for old Konqueror browsers */
 }
 .x-btn {
-	font-size:  1.4em;
-	color: #444;
-	transition: ease-in-out .6s color;
+	opacity: 0.6;
+	font-size:  3em;
+	color: #666;
+	transition: ease-in-out .6s all;
 }
 .x-btn:hover {
 	color: maroon;
+	opacity: 0.8;
 }
 #eks-meny h2 {
 	color: white;

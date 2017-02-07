@@ -1,10 +1,22 @@
 <nav class="clearfix navbar navbar-toggleable-xs navbar-inverse fixed-top bg-inverse">
     <div>
         <div class="eks-logo">
-            <a href="#" (click)="menyToggle()"><i class="fa fa-lg fa-eercast text-success" aria-hidden="true"></i></a>
+        <div  id="ball">
+            <i (click)="menyToggle()" class="fa fa-lg fa-eercast text-success" aria-hidden="true"></i>
+            </div>
         </div>
         <div class="eks-boks">
             <a routerLink="/" routerLinkActive="active">Ekstremedia Ang 2</a>
         </div>
     </div>
 </nav>
+
+<div id="eks-meny">
+<i style="float: right;" class="fa fa-lg fa-times text-success" (click)="hideMeny()" ></i>
+  <h1>Meny</h1>
+  <hr>
+  <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+  <a class="nav-link" routerLink="/side2" routerLinkActive="active"><span (click)="hideMeny()">Page 2</span> <span class="sr-only">(current)</span></a>
+  <a class="nav-link" routerLink="/side3" routerLinkActive="active">Page 3</a>
+
+</div>

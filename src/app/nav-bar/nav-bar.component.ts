@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {Router, RouterOutlet} from '@angular/router';
+
 declare var ease, TimelineMax,TweenMax,Power4,Power1,Power2,Power3,Bounce, Elastic:any;
 import "gsap";
 // declare var TimelineMax:any;
 // const TimelineMax = require('gsap').TimelineMax;
+
 
 @Component({
   selector: 'nav-bar',
@@ -11,41 +14,76 @@ import "gsap";
 })
 export class NavBarComponent {
 
-	vis: boolean = true;
-    h1 = document.getElementById("h1");
-
+  publicRoutes: any;
+  private parentRouter: Router;
+	vis: boolean;
+	// parentRouter = this.parentRouter;
+	// console.log(parentRouter);
   constructor() {
 
-       console.log("navbnar");
+
     }
 
   ngOnInit(){
-
-    // let tl = TimelineMax(); // this is free of errors now
-
-    // tl.play();  
-
-
-
- }
-  menyToggle()  {
- 	this.vis = !this.vis;
- 	if (this.vis) {
- 		this.hideMeny();
- 	} else {
- 		this.showMeny();
- 	}
- 	console.log("meny toggle"+this.vis);
  }
 
+
+   menuGo(url) {
+   	  // parentRouter 
+   }
    hideMeny()  {
-    let h1 = document.getElementById("eks-meny");
-   	      TweenMax.to(h1, 1, { opacity:0, x:-1000, ease: Power4.easeInOut }, 0);
+    	let eks = document.getElementById("eks-meny");
+		let ball = document.getElementById("ball");
+    	//this.cFlipBtn(ball);
+			this.flipBtn(ball);
+			TweenMax.fromTo(eks, .2,
+			{ opacity:1, x:0 }, 
+			{ opacity:0, x:-200 });
+			this.setNeg();
+
    }
    showMeny()  {
-    let h1 = document.getElementById("eks-meny");
-   	      // TweenMax.to(h1, 1, { opacity: 0.9, x:0, ease: Power2.easeInOut }, "-=0.1");
-   	      TweenMax.fromTo(h1, .4, { opacity:0, x:-1000, ease: Power4.easeInOut },{ opacity:0.94, x:0, ease: Power4.easeInOut }, "-=0.1");
-   }
+   			// let tl = new TimelineMax();
+		    let eks = document.getElementById("eks-meny");
+		    let ball = document.getElementById("ball");
+			this.flipBtn(ball);
+			// tl.play();
+			TweenMax.fromTo(eks, 1, 
+				{ opacity:0, x:-220, },
+				{ opacity:1, x:0, ease: Elastic.easeOut.config(1, 0.5)});
+			this.setPos();
+  	
+	}
 
+	flipBtn(cobj) {
+			TweenMax.to(cobj, .6, { rotationY:360, ease: Power4.easeOut,onComplete:resetRotation} );
+			function resetRotation()
+			{
+			    TweenMax.set(cobj, {rotationY:0});
+			}		
+	}
+	cFlipBtn(ovbj) {
+			TweenMax.to(ovbj, .4, { rotationY:360, ease: Power4.easeOut,onComplete:resetRotation} );
+			function resetRotation()
+			{
+			    TweenMax.set(ovbj, {rotationY:0});
+			}		
+	}	
+	 setNeg() {
+		this.vis = false;
+	}
+	 setPos() {
+		this.vis = true;
+	}	
+
+	  menyToggle()  {
+ 	this.vis = !this.vis;
+ 	if (this.vis) {
+ 		this.showMeny();
+ 	} 
+ 	if (!this.vis) {
+ 		this.hideMeny();
+ 	}
+
+ }
 }

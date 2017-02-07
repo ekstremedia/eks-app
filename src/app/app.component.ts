@@ -10,9 +10,10 @@ import 'jquery';
   template: `
   <nav-bar></nav-bar>
   <h1>
-  &nbsp;
+  &nbsp; 
   </h1>
   <nav-meny></nav-meny>
+  
  <router-outlet></router-outlet>
   `,
   // styleUrls: ['../app.component.css']

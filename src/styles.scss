@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+$bg: #193752;
+$lys1: #418CD1;
+$lys2: #2D6191;
+$mork1: #152E45;
+$mork2: #102233;
+$gr1: #98DB21;
+$gr2: #537812;
+nav  {
+	background-color: $mork2 !important;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+body {
+	background-color: $bg;
+	font-size: 14px; 
+	color: $lys1;
+}
+
+.redtext { 
+	color: red; 
+	// text-shadow: 0px 0px 2px rgba(255,0,0,0.5); 
+}
+
+.greentext { 
+	color: $gr1; 
+}
+.greentext2 { 
+	color: $gr2; 
+}
+.whitetext { 
+	color: #FFF; 
+}
+a {
+	cursor: pointer;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.eks-logo {
+	width: 40px;
+	height: 40px;
+	float:  left;
+	color:  white;
+	font-size: 1.8em;
+}
+.eks-logo a {
+	margin-left: 5px;
+}
+.eks-boks {
+	margin-left: 10px;
+	font-size: 1.8em;
+	width: 250px;
+	height: 40px;
+	float:  left;
+}
+#eks-meny {
+	box-shadow: 0px 0px 6px #000;
+	top: 60px;
+    opacity: 0;
+    background: $gr2;
+    width: 320px;
+    margin: 0 auto;
+    color: $mork1;
+    padding: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /* future proofing */
+    -khtml-border-radius: 5px;
+    /* for old Konqueror browsers */
+}
+.x-btn {
+	opacity: 0.3;
+	font-size:  2em;
+	color: #FFF;
+	transition: ease-in-out .4s all;
+}
+.x-btn:hover {
+	color: maroon;
+	opacity: 0.8;
+}
+#eks-meny h2 {
+	color: white;
+}
+#eks-meny a {
+	color: $mork2;
+}
+#eks-meny a:hover {
+	font-weight: bold;
+}
+.ts {
+	text-shadow: 0px 0px 25px transparent;
+	transition: .6s ease-in-out all;
+}
+.ts:hover {
+	text-shadow: 0px 0px 3px $gr1;
+}

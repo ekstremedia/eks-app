@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ViewEncapsulation} from '@angular/core';
 
 import 'jquery';
 // declare var TimelineMax:any;
@@ -16,6 +17,10 @@ import 'jquery';
   
  <router-outlet></router-outlet>
   `,
+  styles: [
+    require('../styles.scss')
+  ],
+    encapsulation: ViewEncapsulation.None  
   // styleUrls: ['../app.component.css']
 })
 export class AppComponent {

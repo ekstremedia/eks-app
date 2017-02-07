@@ -1,22 +1,19 @@
 <nav class="clearfix navbar navbar-toggleable-xs navbar-inverse fixed-top">
     <div>
         <div class="eks-logo">
-        <div id="ball">
-            <i (click)="menyToggle()" class="fa fa-lg fa-eercast text-success ts" aria-hidden="true"></i>
+            <div id="ball">
+                <i (click)="menyToggle()" class="fa fa-lg fa-eercast text-success ts" aria-hidden="true"></i>
             </div>
         </div>
         <div class="eks-boks ">
-            <a  class="whitetext" routerLink="/" routerLinkActive="active" (click)="hideMenyIf()"><span>Ekstremedia Ang 2</span></a>
+            <a class="whitetext" routerLink="/" routerLinkActive="active" (click)="hideMenyIf()"><span>Ekstremedia Ang 2</span></a>
         </div>
     </div>
 </nav>
-
 <div id="eks-meny">
-<i style="float: right;" class="fa fa-lg fa-window-close-o  x-btn" (click)="hideMenyIf()" ></i>
-  Meny
-  <hr>
-  <a class="nav-link" routerLink="/" routerLinkActive="active" (click)="hideMenyIf()"><span >Home</span></a>
-  <a class="nav-link" routerLink="/side2" routerLinkActive="active" (click)="hideMenyIf()"><span>Page 2</span> <span class="sr-only">(current)</span></a>
-  <a class="nav-link" routerLink="/side3" routerLinkActive="active" (click)="hideMenyIf()"><span (click)="hideMenyIf()">Page 3</span></a>
-
+    <i style="float: right;" class="fa fa-lg fa-window-close-o  x-btn" (click)="hideMenyIf()"></i> Meny
+    <hr>
+    <a class="nav-link" routerLink="/" routerLinkActive="active" (click)="hideMenyIf()"><span >Home</span></a>
+    <a class="nav-link" routerLink="/side2" routerLinkActive="active" (click)="hideMenyIf()"><span>Page 2</span> <span class="sr-only">(current)</span></a>
+    <a class="nav-link" routerLink="/side3" routerLinkActive="active" (click)="hideMenyIf()"><span (click)="hideMenyIf()">Page 3</span></a>
 </div>

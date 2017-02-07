@@ -2,6 +2,7 @@
 $bg: #193752;
 $lys1: #418CD1;
 $lys2: #2D6191;
+$lys3: #DEEDDF;
 $mork1: #152E45;
 $mork2: #102233;
 $gr1: #98DB21;
@@ -103,4 +104,32 @@ a {
 }
 .ts:hover {
 	text-shadow: 0px 0px 3px $gr1;
+}
+.padcont {
+	margin-top: 10px;
+	padding-top: 20px;
+	color: $lys3;
+}
+h2 {
+	color: $gr1;
+}
+h5 {
+	color: $gr1;
+}
+
+.fad {
+    animation-duration: 1s;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

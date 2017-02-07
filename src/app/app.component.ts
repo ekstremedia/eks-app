@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
 
-import 'jquery';
+// import 'jquery';
 // declare var TimelineMax:any;
 // const TimelineMax = require('gsap').TimelineMax;
 // declare var $:JQueryStatic;
@@ -15,7 +15,7 @@ import 'jquery';
   </h1>
   <nav-meny></nav-meny>
   
- <router-outlet></router-outlet>
+ <router-outlet class="fad"></router-outlet>
   `,
   styles: [
     require('../styles.scss')

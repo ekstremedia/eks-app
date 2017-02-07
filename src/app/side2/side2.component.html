@@ -1,15 +1,16 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="h1">
-                <h1 class="display-2">Page 2</h1>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12" id="h2">
-                <br>
-                <br>
-                <div class="greentext">
-                    <div class="container">
-                        <pre class="greentext">
+        <div class="col">
+            <p class="display-2 h1">Page 2</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" id="h2">
+            <br>
+            <br>
+            <div class="greentext">
+                <div class="container">
+                    <pre class="greentext">
 import "gsap";
 declare var ease, TimelineMax,TweenMax,Power4,Power1,Power2,Power3,Bounce, Elastic:any;
 
@@ -18,24 +19,23 @@ export class Side2Component implements OnInit &#123;
   constructor() &#123; &#125;
 
   ngOnInit() &#123;
-	let p2tl = new TimelineMax();
-	let h1 = document.getElementById("h1");
-	p2tl.repeat(-1); p2tl.repeatDelay(1);	  
-	p2tl.to(h1, 0.6, &#123;  x: 250, ease: Power4.easeInOut &#125;, "+=2");
-	p2tl.to(h1, 0.6, &#123;  x: 0, ease: Power4.easeInOut &#125;, "+=2");
-	p2tl.to(h1, 0.6, &#123;  x: 420, ease: Power4.easeInOut &#125;, "+=2");
-	p2tl.to(h1, 0.6, &#123;  x: 30, ease: Power4.easeInOut &#125;, "+=2");
-	p2tl.to(h1, 0.6, &#123;  x: 0, ease: Power4.easeInOut &#125;, "+=2");
-	p2tl.play();	
-   &#125;	
-&#125;		
+    let p2tl = new TimelineMax();
+    let h1 = document.getElementById("h1");
+    p2tl.repeat(-1); p2tl.repeatDelay(1);     
+    p2tl.to(h1, 0.6, &#123;  x: 250, ease: Power4.easeInOut &#125;, "+=2");
+    p2tl.to(h1, 0.6, &#123;  x: 0, ease: Power4.easeInOut &#125;, "+=2");
+    p2tl.to(h1, 0.6, &#123;  x: 420, ease: Power4.easeInOut &#125;, "+=2");
+    p2tl.to(h1, 0.6, &#123;  x: 30, ease: Power4.easeInOut &#125;, "+=2");
+    p2tl.to(h1, 0.6, &#123;  x: 0, ease: Power4.easeInOut &#125;, "+=2");
+    p2tl.play();    
+   &#125;   
+&#125;      
 </pre>
-                    </div>
                 </div>
-                <p>
-                    <a href="https://github.com/ekstremedia/eks-app" target="_blank">https://github.com/ekstremedia/eks-app</a>
-                </p>
             </div>
+            <p>
+                <a href="https://github.com/ekstremedia/eks-app" target="_blank">https://github.com/ekstremedia/eks-app</a>
+            </p>
         </div>
     </div>
 </div>

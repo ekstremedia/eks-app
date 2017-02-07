@@ -32,14 +32,14 @@ export class NavBarComponent {
    	  // parentRouter 
    }
    hideMeny()  {
-    	let eks = document.getElementById("eks-meny");
-		let ball = document.getElementById("ball");
-    	//this.cFlipBtn(ball);
-			this.flipBtn(ball);
-			TweenMax.fromTo(eks, .2,
-			{ opacity:1, x:0 }, 
-			{ opacity:0, x:420 });
-			this.setNeg();
+	let eks = document.getElementById("eks-meny");
+	let ball = document.getElementById("ball");
+	//this.cFlipBtn(ball);
+		this.flipBtn(ball);
+		TweenMax.fromTo(eks, .6,
+		{ opacity:1, x:0 }, 
+		{ opacity:0, x:-2420 , ease: Power2.easeInOut});
+		this.setNeg();
 
    }
    hideMenyIf()  {
@@ -48,9 +48,9 @@ export class NavBarComponent {
 		let ball = document.getElementById("ball");
     	//this.cFlipBtn(ball);
 			this.flipBtn(ball);
-			TweenMax.fromTo(eks, .2,
+			TweenMax.fromTo(eks, .6,
 			{ opacity:1, x:0 }, 
-			{ opacity:0, x:420 });
+			{ opacity:0, x:-2420 , ease: Power2.easeInOut});
 			this.setNeg();
 		}
    }   
@@ -61,7 +61,7 @@ export class NavBarComponent {
 			this.flipBtn(ball);
 			// tl.play();
 			TweenMax.fromTo(eks, 1, 
-				{ opacity:0, x:-420, ease: Power2.easeIn },
+				{ opacity:0, x:-2420, ease: Power2.easeIn },
 				{ opacity:1, x:0, ease: Elastic.easeOut.config(0.6, 0.7)});
 			this.setPos();
   	
@@ -88,14 +88,14 @@ export class NavBarComponent {
 		this.vis = true;
 	}	
 
-	  menyToggle()  {
- 	this.vis = !this.vis;
- 	if (this.vis) {
- 		this.showMeny();
- 	} 
- 	if (!this.vis) {
- 		this.hideMeny();
- 	}
+	menyToggle()  {
+		this.vis = !this.vis;
+	 	if (this.vis) {
+	 		this.showMeny();
+	 	} 
+	 	if (!this.vis) {
+	 		this.hideMeny();
+	 	}
+	}
 
- }
 }

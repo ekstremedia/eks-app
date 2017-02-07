@@ -24,7 +24,7 @@ export class Side2Component implements OnInit {
 
   	   let tl = new TimelineMax();
   	   let p2tl = new TimelineMax();
-       let h1 = document.getElementById("h1");
+       let h1 = document.getElementsByClassName("h1");
        let h2 = document.getElementById("h2");
 	  p2tl.repeat(-1);
 	  p2tl.repeatDelay(1);	  

@@ -21,9 +21,22 @@ export class Side3Component implements OnInit {
        let h3 = document.getElementById("h3");
 
       tl.set('#h1', {transformOrigin:"0% 0%"}); 
-      tl.from(h1, 1, { autoAlpha: 0, x: -200,  ease: Power4.easeInOut }, 0);
-      tl.from(h2, 1, { autoAlpha: 0, y: -200, opacity:0, ease:  Power4.easeInOut  }, 0);
-      tl.from(h3, 1, { autoAlpha: 0, x: 200, opacity:0, ease:  Power4.easeInOut  }, 0);
+      let x1,x2,x3;
+      x1 = Math.floor((Math.random() * 300) + -300);
+      x2 = Math.floor((Math.random() * 300) + -300);
+      x3 = Math.floor((Math.random() * 300) + -300);
+      let t1 = Math.floor((Math.random() * 0) + 1);
+      let t2 = Math.floor((Math.random() * 0) + 1);
+      let t3 = Math.floor((Math.random() * 0) + 1);
+      let tt1 = Math.floor((Math.random() * 0) + 9);
+      let tt2 = Math.floor((Math.random() * 0) + 9);
+      let tt3 = Math.floor((Math.random() * 0) + 9);   
+      let ut1 = t1+"."+tt1; 
+      let ut2 = t1+"."+tt1; 
+      let ut3 = t1+"."+tt1; 
+      tl.from(h1, ut1, { autoAlpha: 0, x: x1, ease: Power4.easeInOut }, 0);
+      tl.from(h2, ut2, { autoAlpha: 0, y: x2, ease:  Power4.easeInOut  }, 0);
+      tl.from(h3, ut3, { autoAlpha: 0, x: x3, ease:  Power4.easeInOut  }, 0);
       // tl.to(h1, 0.4, {  scale: 2, ease: Power2.easeInOut }, "-=0.1");
 
        tl.play();

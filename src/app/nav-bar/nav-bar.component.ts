@@ -44,7 +44,7 @@ export class NavBarComponent {
 		let ball = document.getElementById("ball");
 			this.flipBtn(ball);
 			TweenMax.fromTo(eks, .5,
-			{ autoAlpha:1, x:0 }, 
+			{ autoAlpha:1 }, 
 			{ autoAlpha:0, x:2020 , ease: Power2.easeIn});
 			this.setNeg();   	
    }
@@ -54,7 +54,7 @@ export class NavBarComponent {
 		    let ball = document.getElementById("ball");
 			this.flipBtn(ball);
 			// tl.play();
-			TweenMax.fromTo(eks, 1, 
+			TweenMax.fromTo(eks, .5, 
 				{ autoAlpha:0, x:-2420, ease: Power2.easeIn },
 				{ autoAlpha:1, x:0, ease: Elastic.easeOut.config(0.6, 0.7)});
 			this.setPos();

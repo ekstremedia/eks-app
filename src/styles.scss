@@ -103,7 +103,7 @@ a {
 	transition: .6s ease-in-out all;
 }
 .ts:hover {
-	text-shadow: 0px 0px 3px $gr1;
+	text-shadow: 0px 0px 3px $lys1;
 }
 .padcont {
 	margin-top: 10px;
@@ -116,7 +116,14 @@ h2 {
 h5 {
 	color: $gr1;
 }
-
+.eks-boks a {
+	color: $gr1;
+	transition: .4s ease-out color;
+	text-decoration: none;
+}
+.eks-boks a:hover {
+	color: $lys1;
+}
 .fad {
     animation-duration: 1s;
     opacity: 0;

@@ -27,7 +27,6 @@ export class AppComponent {
    title = 'My Angular 2 Quickstart' ;
   constructor() {
 
-       console.log("home");
     }
   ngOnInit(){
 

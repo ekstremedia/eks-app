@@ -32,28 +32,22 @@ export class NavBarComponent {
    	  // parentRouter 
    }
    hideMeny()  {
-	let eks = document.getElementById("eks-meny");
-	let ball = document.getElementById("ball");
-	//this.cFlipBtn(ball);
-		this.flipBtn(ball);
-		TweenMax.fromTo(eks, .6,
-		{ opacity:1, x:0 }, 
-		{ opacity:0, x:-2420 , ease: Power2.easeInOut});
-		this.setNeg();
-
+   		this.hma();
    }
    hideMenyIf()  {
    	if (this.vis) {
-    	let eks = document.getElementById("eks-meny");
-		let ball = document.getElementById("ball");
-    	//this.cFlipBtn(ball);
-			this.flipBtn(ball);
-			TweenMax.fromTo(eks, .6,
-			{ opacity:1, x:0 }, 
-			{ opacity:0, x:-2420 , ease: Power2.easeInOut});
-			this.setNeg();
+   		this.hma();
 		}
    }   
+   hma() {
+    	let eks = document.getElementById("eks-meny");
+		let ball = document.getElementById("ball");
+			this.flipBtn(ball);
+			TweenMax.fromTo(eks, .5,
+			{ autoAlpha:1, x:0 }, 
+			{ autoAlpha:0, x:2020 , ease: Power2.easeIn});
+			this.setNeg();   	
+   }
    showMeny()  {
    			// let tl = new TimelineMax();
 		    let eks = document.getElementById("eks-meny");
@@ -61,8 +55,8 @@ export class NavBarComponent {
 			this.flipBtn(ball);
 			// tl.play();
 			TweenMax.fromTo(eks, 1, 
-				{ opacity:0, x:-2420, ease: Power2.easeIn },
-				{ opacity:1, x:0, ease: Elastic.easeOut.config(0.6, 0.7)});
+				{ autoAlpha:0, x:-2420, ease: Power2.easeIn },
+				{ autoAlpha:1, x:0, ease: Elastic.easeOut.config(0.6, 0.7)});
 			this.setPos();
   	
 	}

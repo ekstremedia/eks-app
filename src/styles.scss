@@ -58,6 +58,7 @@ a {
 	float:  left;
 }
 #eks-meny {
+ 	position: fixed; // makes the menu always apear top even if user scrolled down on page 
 	box-shadow: 0px 0px 6px #000;
 	top: 60px;
     opacity: 0;
@@ -66,7 +67,6 @@ a {
     margin: 0 auto;
     color: $mork1;
     padding: 10px;
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;

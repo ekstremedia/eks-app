@@ -14,7 +14,6 @@ import { NavBarComponent } from './../nav-bar.component';
 export class MenyComponent {
   constructor() {
 
-       console.log("meny comp");
     }
   ngOnInit(){
 
@@ -22,13 +21,17 @@ export class MenyComponent {
 
     // tl.play();  
  }
+        // width:0;
+        // height:0;
+        // visibility:hidden;
 
     hideMeny()  {
     let h1 = document.getElementById("eks-meny");
     NavBarComponent
 	TweenMax.fromTo(h1, .2,
 		{ opacity:1, x:0 }, 
-		{ opacity:0, x:-200 });
+		{ opacity:0, x:-200,
+    css: { width: 0, height:0, visibilty: "hidden" } });
 	// TweenMax.fromTo(h1, .5, {rotationY:-180},{rotationY:0});
    }
 }
